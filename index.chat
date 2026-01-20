@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elira — Your Safe Place to Talk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=DM+Sans:wght@400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #FAF7F2;
+      --blush: #EECAD5;
+      --brown: #6B4E45;
+      --lavender: #C9C3E6;
+      --midnight: #0F0F14;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--cream), var(--lavender));
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brown);
+    }
+
+    .app {
+      width: 100%;
+      max-width: 420px;
+      height: 90vh;
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(18px);
+      border-radius: 26px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    header {
+      padding: 22px;
+      text-align: center;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      margin-top: 6px;
+      opacity: 0.8;
+    }
+
+    select {
+      margin-top: 12px;
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 12px;
+      background: var(--cream);
+      color: var(--brown);
+    }
+
+    .chat {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .bubble {
+      max-width: 80%;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      border-radius: 18px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .elira {
+      background: var(--blush);
+      align-self: flex-start;
+    }
+
+    .user {
+      background: var(--lavender);
+      align-self: flex-end;
+    }
+
+    footer {
+      padding: 14px;
+      display: flex;
+      gap: 10px;
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    input {
+      flex: 1;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      background: #ffffff;
+    }
+
+    button {
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: none;
+      background: var(--brown);
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <h1>Elira</h1>
+      <p>Your safe place to talk 🤍</p>
+
+      <select>
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Marathi</option>
+        <option>Telugu</option>
+        <option>Kannada</option>
+        <option>Malayalam</option>
+        <option>Urdu</option>
+      </select>
+    </header>
+
+    <div class="chat">
+      <div class="bubble elira">
+        Hi… I’m Elira 🌙  
+        You can talk freely here. I’m listening.
+      </div>
+    </div>
+
+    <footer>
+      <input type="text" placeholder="Type your thoughts…" />
+      <button>Send</button>
+    </footer>
+  </div>
+</body>
+</html>
